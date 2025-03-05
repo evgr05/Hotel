@@ -26,7 +26,7 @@ namespace Hotel.DataFiles
         public Nullable<int> Number { get; set; }
         public Nullable<int> CategoryId { get; set; }
     
-        public virtual Category Category { get; set; }
+        public virtual Categorys Categorys { get; set; }
         public virtual Floors Floors { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Guests> Guests { get; set; }

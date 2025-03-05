@@ -43,7 +43,7 @@ namespace Hotel.Pages
 
         private void btnReport_Click(object sender, RoutedEventArgs e)
         {
-            FrameHelper.frmObj.Navigate(new PageReport());
+            FrameHelper.frmObj.Navigate(new PageReport());            
         }
     }
 }

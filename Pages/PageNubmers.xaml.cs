@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hotel.DataFiles;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace Hotel.Pages
         public PageNubmers()
         {
             InitializeComponent();
+            numGrid.ItemsSource = OdbConnectHelper.entObj.Numbers.ToList();
         }
     }
 }

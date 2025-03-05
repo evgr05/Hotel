@@ -25,7 +25,7 @@ namespace Hotel.DataFiles
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Category> Category { get; set; }
+        public virtual DbSet<Categorys> Categorys { get; set; }
         public virtual DbSet<Clients> Clients { get; set; }
         public virtual DbSet<Floors> Floors { get; set; }
         public virtual DbSet<Guests> Guests { get; set; }

@@ -5,22 +5,22 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="47891b2940d64ed39dc1976d6b0b4b10" Name="Diagram1">
-        <EntityTypeShape EntityType="HotelModel.Category" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.Clients" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.Floors" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.Guests" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.Numbers" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.ReportStatusNumber" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.Role" Width="1.5" PointX="5.75" PointY="7.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.Status" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.Users" Width="1.5" PointX="8" PointY="7.125" IsExpanded="true" />
-        <AssociationConnector Association="HotelModel.FK_Numbers_Category" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK_Guests_Clients" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK_Numbers_Floors" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK_Guests_Numbers" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK_ReportStatusNumber_Numbers" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK_ReportStatusNumber_Status" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK_Users_Role" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="HotelModel.Categorys" Width="1.5" PointX="0.75" PointY="1.125" />
+        <EntityTypeShape EntityType="HotelModel.Clients" Width="1.5" PointX="3" PointY="1.25" />
+        <EntityTypeShape EntityType="HotelModel.Floors" Width="1.5" PointX="0.75" PointY="4.125" />
+        <EntityTypeShape EntityType="HotelModel.Guests" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="HotelModel.Numbers" Width="1.5" PointX="3" PointY="3.625" />
+        <EntityTypeShape EntityType="HotelModel.ReportStatusNumber" Width="1.5" PointX="5.25" PointY="3.875" />
+        <EntityTypeShape EntityType="HotelModel.Role" Width="1.5" PointX="5.75" PointY="7.75" />
+        <EntityTypeShape EntityType="HotelModel.Status" Width="1.5" PointX="3" PointY="7.125" />
+        <EntityTypeShape EntityType="HotelModel.Users" Width="1.5" PointX="8" PointY="7.125" />
+        <AssociationConnector Association="HotelModel.FK_Numbers_Category" />
+        <AssociationConnector Association="HotelModel.FK_Guests_Clients" />
+        <AssociationConnector Association="HotelModel.FK_Numbers_Floors" />
+        <AssociationConnector Association="HotelModel.FK_Guests_Numbers" />
+        <AssociationConnector Association="HotelModel.FK_ReportStatusNumber_Numbers" />
+        <AssociationConnector Association="HotelModel.FK_ReportStatusNumber_Status" />
+        <AssociationConnector Association="HotelModel.FK_Users_Role" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

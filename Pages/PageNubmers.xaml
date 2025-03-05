@@ -9,6 +9,13 @@
       Title="PageNubmers">
 
     <Grid>
-        
+        <DataGrid x:Name="numGrid" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Этаж" Binding="{Binding Floors.Floor}"/>
+                <DataGridTextColumn Header="Номер" Binding="{Binding Number}"/>
+                <DataGridTextColumn Header="Категория" Binding="{Binding Categorys.Category}"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>

@@ -10,3 +10,4 @@
         <Frame x:Name="frmMain" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>
+ 
