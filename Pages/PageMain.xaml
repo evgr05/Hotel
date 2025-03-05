@@ -10,9 +10,9 @@
 
     <Grid>
         <StackPanel  HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="btnNumbers" Content="Номера" Margin="0 0 0 10"/>
-            <Button x:Name="btnGuests" Content="Постояльцы" Margin="0 0 0 10"/>
-            <Button x:Name="btnReport" Content="Состояние номерного фонда" Margin="0 0 0 10"/>
+            <Button x:Name="btnNumbers" Content="Номера" Margin="0 0 0 10" Click="btnNumbers_Click"/>
+            <Button x:Name="btnGuests" Content="Постояльцы" Margin="0 0 0 10" Click="btnGuests_Click"/>
+            <Button x:Name="btnReport" Content="Состояние номерного фонда" Margin="0 0 0 10" Click="btnReport_Click"/>
             <Button x:Name="btnExit" Content="Выход" Click="btnExit_Click"/>
         </StackPanel>
         

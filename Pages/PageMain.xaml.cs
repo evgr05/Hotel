@@ -30,5 +30,20 @@ namespace Hotel.Pages
         {
             FrameHelper.frmObj.Navigate(new PageLogin());
         }
+
+        private void btnNumbers_Click(object sender, RoutedEventArgs e)
+        {
+            FrameHelper.frmObj.Navigate(new PageNubmers());
+        }
+
+        private void btnGuests_Click(object sender, RoutedEventArgs e)
+        {
+            FrameHelper.frmObj.Navigate(new PageGuests());
+        }
+
+        private void btnReport_Click(object sender, RoutedEventArgs e)
+        {
+            FrameHelper.frmObj.Navigate(new PageReport());
+        }
     }
 }
