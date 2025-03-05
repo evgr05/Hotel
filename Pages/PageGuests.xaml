@@ -9,6 +9,16 @@
       Title="PageGuests">
 
     <Grid>
-        
+        <DataGrid x:Name="guestGrid" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Этаж" Binding="{Binding Numbers.Floors.Floor}"/>
+                <DataGridTextColumn Header="Номер" Binding="{Binding Numbers.Number}"/>
+                <DataGridTextColumn Header="Категория" Binding="{Binding Numbers.Categorys.Category}"/>
+                <DataGridTextColumn Header="Клиент" Binding="{Binding Clients.FullName}"/>
+                <DataGridTextColumn Header="Дата заезда" Binding="{Binding DateOfEntry}"/>
+                <DataGridTextColumn Header="Дата выезда" Binding="{Binding DateOfDeparture}"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>
