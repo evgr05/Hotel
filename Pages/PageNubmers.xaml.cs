@@ -28,6 +28,10 @@ namespace Hotel.Pages
             InitializeComponent();
             numGrid.ItemsSource = OdbConnectHelper.entObj.Numbers.ToList();
             _currentUser = _selectedUser;
+            if (_currentUser.RoleId == 3)
+            {
+                btnAdd.Visibility = Visibility.Hidden;
+            }
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
