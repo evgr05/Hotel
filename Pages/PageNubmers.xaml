@@ -17,8 +17,8 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Этаж" Binding="{Binding Floors.Floor}"/>
                 <DataGridTextColumn Header="Номер" Binding="{Binding Number}"/>
-                <DataGridTextColumn Header="Категория" Binding="{Binding Categorys.Category}"/>                               
-            </DataGrid.Columns>            
+                <DataGridTextColumn Header="Категория" Binding="{Binding Categorys.Category}"/>
+            </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="btnAdd" Content="Добавить" Width="100" Height="25" HorizontalAlignment="Left" Grid.Row="1" Click="btnAdd_Click"/>
         <Button x:Name="btnExit" Content="Назад" Width="100" Height="25" HorizontalAlignment="Right" Grid.Row="1" Click="btnExit_Click"/>
