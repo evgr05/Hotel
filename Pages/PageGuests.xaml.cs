@@ -33,5 +33,10 @@ namespace Hotel.Pages
         {
             FrameHelper.frmObj.Navigate(new PageMain(_currentUser));
         }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
