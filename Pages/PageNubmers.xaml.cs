@@ -28,7 +28,7 @@ namespace Hotel.Pages
             InitializeComponent();
             numGrid.ItemsSource = OdbConnectHelper.entObj.Numbers.ToList();
             _currentUser = _selectedUser;
-            if (_currentUser.RoleId == 3)
+            if (_currentUser.RoleId == 3 || _currentUser.RoleId == 1)
             {
                 btnAdd.Visibility = Visibility.Hidden;
             }
