@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Hotel.Windows;
 
 namespace Hotel.Pages
 {
@@ -21,10 +22,23 @@ namespace Hotel.Pages
     /// </summary>
     public partial class PageNubmers : Page
     {
-        public PageNubmers()
+        Users _currentUser;
+        public PageNubmers(Users _selectedUser)
         {
             InitializeComponent();
             numGrid.ItemsSource = OdbConnectHelper.entObj.Numbers.ToList();
+            _currentUser = _selectedUser;
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            FrameHelper.frmObj.Navigate(new PageMain(_currentUser));
+        }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            WindowAddNumber windowAddNumber = new WindowAddNumber(null, _currentUser);
+            windowAddNumber.Show();
         }
     }
 }

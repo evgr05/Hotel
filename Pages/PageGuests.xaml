@@ -9,6 +9,10 @@
       Title="PageGuests">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="45"/>
+        </Grid.RowDefinitions>
         <DataGrid x:Name="guestGrid" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Этаж" Binding="{Binding Numbers.Floors.Floor}"/>
@@ -20,5 +24,6 @@
 
             </DataGrid.Columns>
         </DataGrid>
+        <Button x:Name="btnExit" Content="Назад" Width="100" Height="25" HorizontalAlignment="Right" Grid.Row="1" Click="btnExit_Click"/>
     </Grid>
 </Page>

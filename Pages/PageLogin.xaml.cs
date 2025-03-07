@@ -53,7 +53,7 @@ namespace Hotel.Pages
                                 userObj.DateLogin = DateTime.Now;
                                 userObj.Attemp = 1;
                                 OdbConnectHelper.entObj.SaveChanges();
-                                FrameHelper.frmObj.Navigate(new PageMain());
+                                FrameHelper.frmObj.Navigate(new PageMain(userObj));
                             }
 
                         }

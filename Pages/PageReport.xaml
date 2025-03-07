@@ -9,6 +9,19 @@
       Title="PageReport">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="45"/>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="repGrid" AutoGenerateColumns="False" Grid.Row="0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер" Binding="{Binding Numbers.Number}"/>
+                <DataGridTextColumn Header="Категория" Binding="{Binding Numbers.Categorys.Category}"/>
+                <DataGridTextColumn Header="Статус" Binding="{Binding Status.Status1}"/>
+                <DataGridTextColumn Header="Дата выезда" Binding="{Binding DepartureDate}"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnExit" Content="Назад" Width="100" Height="25" HorizontalAlignment="Right" Grid.Row="1" Click="btnExit_Click"/>
     </Grid>
 </Page>

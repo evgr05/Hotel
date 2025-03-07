@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hotel.DataFiles;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,17 @@ namespace Hotel.Pages
     /// </summary>
     public partial class PageReport : Page
     {
-        public PageReport()
+        Users _currentUser;
+        public PageReport(Users _selectedUser)
         {
             InitializeComponent();
+            _currentUser = _selectedUser;
+            repGrid.ItemsSource = OdbConnectHelper.entObj.ReportStatusNumber.ToList();
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            FrameHelper.frmObj.Navigate(new PageMain(_currentUser));
         }
     }
 }

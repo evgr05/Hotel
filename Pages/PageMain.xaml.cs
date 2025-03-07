@@ -21,9 +21,16 @@ namespace Hotel.Pages
     /// </summary>
     public partial class PageMain : Page
     {
-        public PageMain()
+        Users _currentUser;
+        public PageMain(Users _selectedUser)
         {
             InitializeComponent();
+             _currentUser = _selectedUser;
+            if (_currentUser.RoleId == 3)
+            {
+                btnGuests.Visibility = Visibility.Hidden;
+                btnReport.Visibility = Visibility.Hidden;
+            }
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
@@ -33,17 +40,17 @@ namespace Hotel.Pages
 
         private void btnNumbers_Click(object sender, RoutedEventArgs e)
         {
-            FrameHelper.frmObj.Navigate(new PageNubmers());
+            FrameHelper.frmObj.Navigate(new PageNubmers(_currentUser));
         }
 
         private void btnGuests_Click(object sender, RoutedEventArgs e)
         {
-            FrameHelper.frmObj.Navigate(new PageGuests());
+            FrameHelper.frmObj.Navigate(new PageGuests(_currentUser));
         }
 
         private void btnReport_Click(object sender, RoutedEventArgs e)
         {
-            FrameHelper.frmObj.Navigate(new PageReport());            
+            FrameHelper.frmObj.Navigate(new PageReport(_currentUser));            
         }
     }
 }

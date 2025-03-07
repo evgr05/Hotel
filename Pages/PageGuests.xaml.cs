@@ -21,10 +21,17 @@ namespace Hotel.Pages
     /// </summary>
     public partial class PageGuests : Page
     {
-        public PageGuests()
+        Users _currentUser;
+        public PageGuests(Users _selectedUser)
         {
             InitializeComponent();
             guestGrid.ItemsSource = OdbConnectHelper.entObj.Guests.ToList();
+            _currentUser = _selectedUser;
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            FrameHelper.frmObj.Navigate(new PageMain(_currentUser));
         }
     }
 }
