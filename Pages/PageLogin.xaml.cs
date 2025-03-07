@@ -49,7 +49,7 @@ namespace Hotel.Pages
                             }
                             else
                             {
-                                MessageBox.Show($"Здравствуйте, {userObj.Name}!");
+                                //MessageBox.Show($"Здравствуйте, {userObj.Name}!");
                                 userObj.DateLogin = DateTime.Now;
                                 userObj.Attemp = 1;
                                 OdbConnectHelper.entObj.SaveChanges();
